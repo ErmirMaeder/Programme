@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texte Nebeneinander</title>
+</head>
+<body>
+
+    <label for="inputText">Eingabetext:</label>
+    <input type="text" id="inputText" oninput="updateText()">
+
+    <div id="textContainer">
+        <span id="text1">Text 1</span>
+        <span id="text2">Text 2</span>
+    </div>
+
+    <script>
+        function updateText() {
+            // Holen Sie den Wert des Eingabefelds
+            let inputValue = document.getElementById('inputText').value;
+
+            // Holen Sie die Elemente für Text 1 und Text 2
+            let text1 = document.getElementById('text1');
+            let text2 = document.getElementById('text2');
+
+            // Setzen Sie die Sichtbarkeit basierend auf dem Eingabewert
+            if (inputValue === 'ZeigeText1') {
+                text1.style.display = 'inline';
+                text2.style.display = 'none';
+            } else if (inputValue === 'ZeigeText2') {
+                text1.style.display = 'none';
+                text2.style.display = 'inline';
+            } else {
+                text1.style.display = 'inline';
+                text2.style.display = 'inline';
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Verlinkung zu CSS und JS-->
+    <script src="script.js"></script>
+    <link rel="stylesheet"  href="style.css">
+</head>
+
+<body>
+    <!-- Titel -->
+    <h1>Budget Fam. Mäder</h1>
+    
+    <!--Lohn Positionen-->
+    <p id="e">Ermir</p>
+      <input placeholder="Lohn Ermir" type="number" value="5970" id="lohn1">
+      <p id="l">Larissa</p>
+      <input placeholder="Lohn Larissa" type="number" value="2900" id="lohn2">
+
+
+    <!--Titel-->
+    <h2>Fixe Kosten</h2>
+
+    <!-- Div Container für Fixe Kosten -->
+    <div>
+        <input type="number" value="2640" >
+        <span>Miete</span>
+    </div>
+    <div>
+        <input type="number" value="560">
+        <span>Leasing</span>
+    </div>
+    <div>        
+        <input type="number" value="1000">
+        <span>Haushalt</span>
+    </div>
+    <div>
+        <input type="number" value="875">
+        <span>Krankenkasse</span>
+    </div>
+    <div>
+        <input type="number" value="135">
+        <span>Autoversicherung</span>
+    </div>
+    <div>
+        <input type="number" value="180">
+        <span>Internetabos</span>
+    </div>
+    <div>
+        <input type="number" value="553">
+        <span>Kitta</span>
+    </div>
+    
+    <h2>Rechnungen</h2>
+
+    </div>
+    <div id="rechnungen-container">
+    </div>
+
+    <h2>Total</h2>
+    <div id="resultat">
+        <!-- Placeholder entfernt und stattdessen einen Wert hinzugefügt -->
+        <input placeholder="Total" type="number" id="total" value="0" disabled>
+    </div>
+    <br>
+    
+    <!-- Füge einen Button zum Hinzufügen eines neuen Rechnungsfelds hinzu -->
+    <button onclick="addNewRechnungField()">Neues Rechnungsfeld hinzufügen</button>
+    
+    <!-- Füge einen Button zum Ausführen der Berechnung hinzu -->
+    <button onclick="berechne()">Berechnen</button>
+
+    <h2>Aufsplittung</h2>
+    <p>Ermir</p>
+    <input placeholder="Anteil Ermir" type="number" id="Anteil1" value="0" disabled>
+    <p>larissa</p>
+    <input placeholder="Anteil Larissa" type="number" id="Anteil2" value="0" disabled>
+
+    <button onclick="split()">Betrag teilen</button>
+
+
+</body>
+</html>
