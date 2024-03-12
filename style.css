@@ -1,0 +1,12 @@
+        .bezeichnung {
+            /* Hier kannst du den Abstand anpassen */
+            margin-top: 0.5em; 
+            margin-left: 0.5em;
+        }
+        div{
+            margin-bottom: 0.5em;
+        }
+        body{
+            background-color: rgb(191, 222, 233);
+
+        }
