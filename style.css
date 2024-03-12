@@ -10,6 +10,26 @@
             background-color: rgb(191, 222, 233);
 
         }
-        .fixekosten{
-            display: flex:
+        .container {
+            display: flex;
         }
+        
+        .lohn-bereich {
+            flex: 1;  /* Flexibles Wachstum für gleiche Breite */
+            padding: 10px;
+        }
+        
+        .fixe-kosten-bereich{
+            flex: 1;  /* Flexibles Wachstum für gleiche Breite */
+            padding: 10px;
+            margin-right: 20px;
+            background-color: #fff;  /* Hintergrundfarbe für bessere Lesbarkeit */
+        }
+
+        .rechnungen-bereich {
+            flex: 1;  /* Flexibles Wachstum für gleiche Breite */
+            padding: 10px;
+            background-color: #fff;  /* Hintergrundfarbe für bessere Lesbarkeit */
+
+        }
+        

@@ -3,86 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BudgetApp</title>
-    <!--Verlinkung zu CSS und JS-->
+    <title>Budget Fam. Mäder</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <link rel="stylesheet"  href="style.css">
 </head>
-
 <body>
-    <!-- Titel -->
-    <h1>Budget Fam. Mäder</h1>
-    
-    <!--Lohn Positionen-->
-    <p id="e">Ermir</p>
-      <input placeholder="Lohn Ermir" type="number" value="" id="lohn1">
-      <p id="l">Larissa</p>
-      <input placeholder="Lohn Larissa" type="number" value="" id="lohn2">
-
-
-    <!--Titel-->
-    <h2>Fixe Kosten</h2>
-    <div id="fixekosten">
 
     
-    <!-- Div Container für Fixe Kosten -->
-    <div>
-        <input type="number" value="" >
-        <span>Miete</span>
-    </div>
-    <div>
-        <input type="number" value="">
-        <span>Leasing</span>
-    </div>
-    <div>        
-        <input type="number" value="">
-        <span>Haushalt</span>
-    </div>
-    <div>
-        <input type="number" value="">
-        <span>Krankenkasse</span>
-    </div>
-    <div>
-        <input type="number" value="">
-        <span>Autoversicherung</span>
-    </div>
-    <div>
-        <input type="number" value="">
-        <span>Internetabos</span>
-    </div>
-    <div>
-        <input type="number" value="">
-        <span>Kitta</span>
+        <div class="lohn-bereich">
+            <!-- Lohnangaben hier -->
+            <h2>Lohn Positionen</h2>
+            <p id="e">Ermir</p>
+            <input placeholder="Lohn Ermir" type="number" value="" id="lohn1">
+            <p id="l">Larissa</p>
+            <input placeholder="Lohn Larissa" type="number" value="" id="lohn2">
+        </div>
+
+<div class="container">
+        <div class="fixe-kosten-bereich">
+            <!-- Fixe Kosten hier -->
+            <h2>Fixe Kosten</h2>
+            <div>
+                <input type="number" value="">
+                <span>Miete</span>
+            </div>
+            <div>
+                <input type="number" value="">
+                <span>Leasing</span>
+            </div>
+            <div>        
+                <input type="number" value="">
+                <span>Haushalt</span>
+            </div>
+            <div>
+                <input type="number" value="">
+                <span>Krankenkasse</span>
+            </div>
+            <div>
+                <input type="number" value="">
+                <span>Autoversicherung</span>
+            </div>
+            <div>
+                <input type="number" value="">
+                <span>Internetabos</span>
+            </div>
+            <div>
+                <input type="number" value="">
+                <span>Kitta</span>
+            </div>
+        </div>
+
+    <div class="rechnungen-bereich">
+        <!-- Rechnungen hier -->
+        <h2>Rechnungen</h2>
+        <div id="rechnungen-container">
+            <!-- Hier werden neue Rechnungsfelder hinzugefügt -->
+        </div>
     </div>
 </div>
-    
-    <h2>Rechnungen</h2>
-
-    </div>
-    <div id="rechnungen-container">
-    </div>
 
     <h2>Total</h2>
     <div id="resultat">
-        <!-- Placeholder entfernt und stattdessen einen Wert hinzugefügt -->
         <input placeholder="Total" type="number" id="total" value="0" disabled>
     </div>
     <br>
     
-    <!-- Füge einen Button zum Hinzufügen eines neuen Rechnungsfelds hinzu -->
     <button onclick="addNewRechnungField()">Neues Rechnungsfeld hinzufügen</button>
-    
-    <!-- Füge einen Button zum Ausführen der Berechnung hinzu -->
     <button onclick="berechne()">Berechnen</button>
 
     <h2>Aufsplittung</h2>
     <p>Ermir</p>
     <input placeholder="Anteil Ermir" type="number" id="Anteil1" value="0" disabled>
-    <p>larissa</p>
+    <p>Larissa</p>
     <input placeholder="Anteil Larissa" type="number" id="Anteil2" value="0" disabled>
 
     <button onclick="split()">Betrag teilen</button>
-
 
 </body>
 </html>
